@@ -1,0 +1,25 @@
+{
+  "name": "duo-auth-request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berryk/duo-auth-request.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berryk/duo-auth-request/issues"
+  },
+  "homepage": "https://github.com/berryk/duo-auth-request#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "duo_web": "^1.0.2",
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
+  }
+}

@@ -1,0 +1,17 @@
+html
+  head
+    title Login
+    script(src='https://api.duosecurity.com/frame/hosted/Duo-Web-v2.js')
+    meta(
+name="viewport"
+content="width=device-width, initial-scale=1"
+)
+  body
+    iframe( 
+id = "duo_iframe"
+data-host=host
+data-sig-request=sig_request
+data-post-action=post_action
+)
+
+include style.css
