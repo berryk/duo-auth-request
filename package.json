@@ -18,8 +18,10 @@
   "homepage": "https://github.com/berryk/duo-auth-request#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "duo_web": "^1.0.2",
     "express": "^4.15.4",
+    "jwt-express": "^1.1.0",
     "pug": "^2.0.0-rc.3"
   }
 }
