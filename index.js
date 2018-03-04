@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var jwt = require('jwt-express');
 var cookieParser = require('cookie-parser');
 
+const timeout = process.env.TIMEOUT || 90000; 
 const port = 3000; 
 
 var akey = 'Xkex;3(h%H9.EwI[0tE0=Q$Xa}8mUjCy;4$v[ty;';
@@ -17,7 +18,7 @@ app.use(cookieParser());
 app.set('views', './views');
 app.set('view engine','pug');
 
-app.use(jwt.init('NUXjuns2t18ilBJTKYGmM8XvignqutLevZED8vfo'));
+app.use(jwt.init('NUXjuns2t18ilBJTKYGmM8XvignqutLevZED8vfo', {stales: timeout}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
